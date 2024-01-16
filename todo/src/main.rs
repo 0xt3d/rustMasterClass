@@ -1,11 +1,9 @@
 //println!("Hello, world!");
-    
+#[derive(Debug)]  
+use std::io;
 struct task{
-    
     id: u32,
-    
     name: String,
-    
     completed: bool
 }
 fn main() {
@@ -25,4 +23,14 @@ fn main() {
  tlist.push(task_2);
 
  println!("{:?}", tlist);
+}
+
+fn update_task(tlist: &mut task){
+    tlist.completed = true;
+}
+
+fn display_task(tlist: &Vec<task>){
+    for tlist in tlist{
+println!("{} - {} ({})", tlist.id, tlist.name, tlist.completed);
+    }
 }
