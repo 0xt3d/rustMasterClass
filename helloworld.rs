@@ -12,4 +12,5 @@ fn main() {
 
     // Print text to the console.
     println!("Hello World!");
+    println!("checking for git update")
 }
