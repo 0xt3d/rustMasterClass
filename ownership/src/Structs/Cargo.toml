@@ -1,6 +1,5 @@
-workspace = { members = ["src/Structs"] }
 [package]
-name = "ownership"
+name = "Structs"
 version = "0.1.0"
 edition = "2021"
 
